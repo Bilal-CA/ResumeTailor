@@ -1,0 +1,25 @@
+# Virtual environment directory
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+
+# Flask debugging logs
+*.log
+
+# MacOS files
+.DS_Store
+
+# PyCharm specific files
+.idea/
+
+# VSCode specific files
+.vscode/
