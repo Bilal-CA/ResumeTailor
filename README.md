@@ -1,4 +1,4 @@
-# Tailor Resume Builderclear
+# Tailor Resume Builder
 
 ## TechStack
 1. Backend: Python, Flask
