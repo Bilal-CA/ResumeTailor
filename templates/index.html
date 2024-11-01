@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Tailor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .form-label {
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Customize Your Resume</h1>
-    <form action="/customize" method="post">
-        <label for="resume">Resume / CV</label><br>
-        <textarea id="resume" name="resume" rows="10" cols="70"></textarea><br><br>
+    <div class="container">
+        <h3 class="text-center mb-1">Customize Your Resume</h3>
+        <p class="text-center mb-3">Get your tailored resume with respect to Job Description</p>
+        <form action="/customize" method="post">
+            <div class="form-group">
+                <label for="resume" class="form-label">Resume / CV</label>
+                <textarea id="resume" name="resume" rows="6" class="form-control" placeholder="Paste your resume here"></textarea>
+            </div>
 
-        <label for="job_description">Job Description</label><br>
-        <textarea id="job_description" name="job_description" rows="10" cols="70"></textarea><br><br>
+            <div class="form-group">
+                <label for="job_description" class="form-label">Job Description</label>
+                <textarea id="job_description" name="job_description" rows="6" class="form-control" placeholder="Paste the job description here"></textarea>
+            </div>
 
-        <button type="submit">Generate Resume</button>
-    </form>
+            <button type="submit" class="btn btn-primary btn-block">Generate Resume</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
