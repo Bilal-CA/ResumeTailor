@@ -1,6 +1,6 @@
 1. flask
     pip install flask
 2. dotenv
-    pip install dotenv
+    pip install python-dotenv
 3. openai
     pip install openai
